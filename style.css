@@ -69,16 +69,21 @@ body{
    justify-content: center;
    align-items: center;
    flex-direction: column;
-   background: linear-gradient(67deg, var(--main-gray), #222);
+   background: linear-gradient(67deg, var(--main-gray), #1e2c29);
    width: 100%;
    height: 100vh;
 }
 
-#welcome-section p{
+#welcome-section p:nth-last-child(2){
    color: var(--contrast);
    padding-top: 2%;
    font-weight: 200;
    font-style: italic;
+}
+
+#welcome-section p:nth-last-child(1){
+   padding-top: 2%;
+   font-style: normal;
 }
 
 #projects{
@@ -111,6 +116,11 @@ body{
    border-radius: 4px;
    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
    transition: 300ms ease-in-out;
+}
+
+.project img{
+   width: 400px;
+   height: 390px;
 }
 
 a{
@@ -206,6 +216,9 @@ footer{
       grid-template-columns: 1fr;
    }
 
+   #welcome-section p:nth-last-child(1){
+      font-size: 1.5rem;
+   }
    
 }
 
@@ -258,6 +271,10 @@ footer{
       font-size: 2.7rem;
    }
 
+   #welcome-section p:nth-last-child(1){
+      font-size: 1.25rem;
+   }
+
    #projects h2, #header h2{
       font-size: 2.5rem;
    }
@@ -278,6 +295,12 @@ footer{
    }
 }
 
+@media screen and (max-width: 684px){
+   #welcome-section p:nth-last-child(1){
+      font-size: 1.05rem;
+   }
+}
+
 @media screen and (max-width: 560px) {
    .hamburger{
       left: 85%;
@@ -291,8 +314,17 @@ footer{
       font-size: 1.5rem;
    }
 
+   #welcome-section p:nth-last-child(1){
+      font-size: 0.85rem;
+   }
+
    #projects{
       padding: 2rem;
+   }
+
+   #projects img{
+      width: 320px;
+      object-fit: cover;
    }
 
    .project-tile, .project-img{
@@ -326,9 +358,19 @@ footer{
       font-size: 1.35rem;
    }
 
+   #welcome-section p:nth-last-child(1){
+      font-size: 0.75rem;
+   }
+
    #projects h2{
       font-size: 1.5rem;
       margin-bottom: 3rem;
+   }
+}
+
+@media screen and (max-width: 420px) { 
+   #welcome-section p:nth-last-child(1){
+      font-size: 0.65rem;
    }
 }
 
