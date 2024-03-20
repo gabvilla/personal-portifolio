@@ -35,7 +35,7 @@ body{
    justify-content: end;
    font-size: 1.35rem;
    font-weight: bold;
-   background: linear-gradient(180deg, #EB3A00, #CB3A00)
+   background-color: var(--main-gray) 
 }
 
 .hamburger{
@@ -69,7 +69,7 @@ body{
    justify-content: center;
    align-items: center;
    flex-direction: column;
-   background: linear-gradient(67deg, var(--main-gray), #1e2c29);
+   background: linear-gradient(to top, var(--main-gray), #1e2c29);
    width: 100%;
    height: 100vh;
 }
@@ -84,6 +84,7 @@ body{
 #welcome-section p:nth-last-child(1){
    padding-top: 2%;
    font-style: normal;
+   text-align: center;
 }
 
 #projects{
@@ -152,6 +153,7 @@ a{
    padding: 20px;
    border-radius: 4px;
    transition: 200ms ease-in-out;
+   display: none;
 }
 
 .btn:hover{
@@ -251,7 +253,7 @@ footer{
       flex-direction: column;
       align-items: start;
       width: 100%;
-      background-color: var(--light-contrast);
+      background-color: var(--main-gray);
       gap: 20px;
       height: 0;
       overflow: hidden;
@@ -370,7 +372,8 @@ footer{
 
 @media screen and (max-width: 420px) { 
    #welcome-section p:nth-last-child(1){
-      font-size: 0.65rem;
+      font-size: 0.8rem;
+      padding: 5px;
    }
 }
 
