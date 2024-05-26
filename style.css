@@ -11,13 +11,13 @@
 
 :root{
    --maincolor: #01c597;
-   --darkcolor: #009E79;
+   --darkcolor: #007c5f;
    --contrast: #EB3A00;
    --light-contrast: #df4a18;
    --fontcolor: #fff;
    --main-gray: #2a3d39;
    --2fontcolor: #222;
-   --analogBlue: #23453D;
+   --analogGreen: #23453D;
 }
 
 body{
@@ -36,7 +36,7 @@ body{
    justify-content: end;
    font-size: 1.35rem;
    font-weight: bold;
-   background-color: var(--analogBlue) 
+   background-color: var(--analogGreen) 
 }
 
 .hamburger{
@@ -70,7 +70,7 @@ body{
    justify-content: center;
    align-items: center;
    flex-direction: column;
-   background-image: linear-gradient(to right bottom, #2a3d3993, #23453da4), url('imagens/code-background.jpg');
+   background-image: linear-gradient(to right bottom, #2a3d39af, #23453db2), url('imagens/code-background.jpg');
    background-size: cover;
    background-position: center;
    width: 100%;
