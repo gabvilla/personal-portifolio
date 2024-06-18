@@ -380,7 +380,7 @@ footer{
    }
 }
 
-@media screen and (max-width: 380px){
+@media screen and (max-width: 400px){
    #welcome-section h1{
       font-size: 1.80rem;
    }
@@ -401,5 +401,12 @@ footer{
    #header p{
       font-size: 1rem;
    }
+}
+
+@media screen and (max-width: 398px) {
+   #projects img {
+      width: 285px;
+      object-fit: cover;
+}
 }
    
